@@ -49,15 +49,7 @@ if &t_Co > 8
 endif
 hi Ignore ctermfg=LightGrey guifg=grey90
 
-set spell
-highlight SpellBad gui=NONE
-highlight SpellCap gui=NONE
-highlight SpellRare gui=NONE
-highlight SpellLocal gui=NONE
-
-syntax match InvisibleJISX0208Space "Å@" display containedin=ALL
+" Invisible characters
 highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=darkgray gui=underline
-syntax match InvisibleTrailedSpace "[ \t]\+$" display containedin=ALL
 highlight InvisibleTrailedSpace term=underline ctermbg=Red guibg=NONE gui=undercurl guisp=darkorange
-syntax match InvisibleTab "\t" display containedin=ALL
 highlight InvisibleTab term=underline ctermbg=white gui=undercurl guisp=darkslategray

@@ -15,8 +15,8 @@ hi Normal ctermfg=Black ctermbg=White guifg=Black guibg=#edf9f3
 hi ErrorMsg term=standout ctermbg=DarkRed ctermfg=White guibg=Red guifg=White
 hi IncSearch term=reverse cterm=reverse gui=reverse
 hi ModeMsg term=bold cterm=bold gui=bold
-hi StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
-hi StatusLineNC term=reverse cterm=reverse gui=reverse
+hi StatusLine ctermfg=DarkGreen ctermbg=White guifg=#aadd88 guibg=#124433
+hi StatusLineNC ctermfg=DarkGreen ctermbg=White guifg=#aadd88 guibg=#124433
 hi VertSplit term=reverse cterm=reverse gui=reverse
 hi Visual term=reverse ctermbg=grey guibg=grey80
 hi VisualNOS term=underline,bold cterm=underline,bold gui=underline,bold

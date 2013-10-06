@@ -49,6 +49,11 @@ if &t_Co > 8
 endif
 hi Ignore ctermfg=LightGrey guifg=grey90
 
+highlight SpellBad cterm=underline ctermbg=white gui=undercurl guibg=transparent
+highlight SpellCap cterm=underline  ctermbg=white gui=undercurl guibg=transparent
+highlight SpellRare cterm=underline ctermbg=white gui=undercurl guibg=transparent
+highlight SpellLocal cterm=underline ctermbg=white gui=undercurl guibg=transparent
+
 " Invisible characters
 highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=darkgray gui=underline
 highlight InvisibleTrailedSpace term=underline ctermbg=Red guibg=NONE gui=undercurl guisp=darkorange

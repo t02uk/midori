@@ -11,16 +11,15 @@ let colors_name = "midori"
 
 hi Normal ctermfg=Black ctermbg=White guifg=Black guibg=#edf9f3
 
-" Groups used in the 'highlight' and 'guicursor' options default value.
 hi ErrorMsg term=standout ctermbg=DarkRed ctermfg=White guibg=Red guifg=White
 hi IncSearch term=reverse cterm=reverse gui=reverse
 hi ModeMsg term=bold cterm=bold gui=bold
-hi StatusLine ctermfg=DarkGreen ctermbg=White guifg=#aadd88 guibg=#124433
-hi StatusLineNC ctermfg=DarkGreen ctermbg=White guifg=#aadd88 guibg=#124433
+hi StatusLine ctermfg=Green ctermbg=White guifg=#aadd88 guibg=#124433
+hi StatusLineNC ctermfg=DarkGreen ctermbg=White guifg=#cceeaa guibg=#124433
 hi VertSplit term=reverse cterm=reverse gui=reverse
 hi Visual term=reverse ctermbg=grey guibg=grey80
 hi VisualNOS term=underline,bold cterm=underline,bold gui=underline,bold
-hi DiffText term=reverse cterm=bold ctermbg=Red gui=bold guibg=Red
+hi DiffText term=standout ctermbg=DarkBlue ctermfg=White guibg=Red
 hi Cursor guibg=Green guifg=NONE
 hi lCursor guibg=Cyan guifg=NONE
 hi Directory term=bold ctermfg=DarkBlue guifg=Blue
@@ -35,9 +34,9 @@ hi WarningMsg term=standout ctermfg=DarkRed guifg=Red
 hi WildMenu term=standout ctermbg=Yellow ctermfg=Black guibg=Yellow guifg=Black
 hi Folded term=standout ctermbg=Grey ctermfg=DarkBlue guibg=LightGrey guifg=DarkBlue
 hi FoldColumn term=standout ctermbg=Grey ctermfg=DarkBlue guibg=Grey guifg=DarkBlue
-hi DiffAdd term=bold ctermbg=LightBlue guibg=LightBlue
-hi DiffChange term=bold ctermbg=LightMagenta guibg=LightMagenta
-hi DiffDelete term=bold ctermfg=Blue ctermbg=LightCyan gui=bold guifg=Blue guibg=LightCyan
+hi DiffAdd ctermbg=LightBlue ctermfg=White guibg=LightBlue
+hi DiffChange ctermbg=LightMagenta ctermfg=White guibg=LightMagenta
+hi DiffDelete ctermfg=Blue ctermbg=LightCyan gui=bold guifg=Blue guibg=LightCyan
 hi CursorLine term=underline cterm=underline guibg=grey80
 hi CursorColumn term=reverse ctermbg=grey guibg=grey80
 
@@ -49,10 +48,10 @@ if &t_Co > 8
 endif
 hi Ignore ctermfg=LightGrey guifg=grey90
 
-highlight SpellBad cterm=underline ctermbg=white gui=undercurl guibg=transparent
-highlight SpellCap cterm=underline  ctermbg=white gui=undercurl guibg=transparent
-highlight SpellRare cterm=underline ctermbg=white gui=undercurl guibg=transparent
-highlight SpellLocal cterm=underline ctermbg=white gui=undercurl guibg=transparent
+highlight SpellBad cterm=underline ctermbg=white gui=undercurl
+highlight SpellCap cterm=underline  ctermbg=white gui=undercurl
+highlight SpellRare cterm=underline ctermbg=white gui=undercurl
+highlight SpellLocal cterm=underline ctermbg=white gui=undercurl
 
 " Invisible characters
 highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=darkgray gui=underline
